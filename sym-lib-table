@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name g6uw_relay-rescue)(type Legacy)(uri ${KIPRJMOD}/g6uw_relay-rescue.lib)(options "")(descr ""))
+)
