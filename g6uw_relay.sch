@@ -373,7 +373,7 @@ Wire Wire Line
 	9750 1700 9750 1650
 Connection ~ 9750 1650
 Wire Wire Line
-	9750 1650 9250 1650
+	9750 1650 9400 1650
 Wire Wire Line
 	9750 2000 9750 2050
 Wire Wire Line
@@ -727,4 +727,40 @@ F 3 "~" H 1600 3300 50  0001 C CNN
 	1    1600 3300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Misc_WUT:Logo_10mmx10mm M1
+U 1 1 5F028F4B
+P 4800 6800
+F 0 "M1" H 4825 6846 50  0000 L CNN
+F 1 "Logo_10mmx10mm" H 4825 6755 50  0000 L CNN
+F 2 "Misc_WUT:Logo_10mmx10mm_Monocle" H 4800 6800 50  0001 C CNN
+F 3 "" H 4800 6800 50  0001 C CNN
+	1    4800 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 800  9400 800 
+Connection ~ 8900 800 
+Connection ~ 9400 1650
+Wire Wire Line
+	9400 1650 9250 1650
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 5F0427F6
+P 9650 1100
+F 0 "J5" H 9622 1028 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 9622 983 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9650 1100 50  0001 C CNN
+F 3 "~" H 9650 1100 50  0001 C CNN
+	1    9650 1100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1100 9450 1100
+Wire Wire Line
+	9400 800  9400 1100
+Wire Wire Line
+	9450 1200 9400 1200
+Wire Wire Line
+	9400 1200 9400 1650
 $EndSCHEMATC

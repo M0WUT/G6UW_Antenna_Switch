@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 40)
+    (drawings 41)
     (tracks 159)
     (zones 0)
     (modules 4)
@@ -18,7 +18,7 @@
     (34 B.Paste user)
     (35 F.Paste user)
     (36 B.SilkS user)
-    (37 F.SilkS user hide)
+    (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
     (40 Dwgs.User user hide)
@@ -60,7 +60,7 @@
     (pad_to_mask_clearance 0.05)
     (aux_axis_origin 0 0)
     (grid_origin 150 99.5)
-    (visible_elements FFFFFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -85,7 +85,7 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
       (outputdirectory ""))
   )
@@ -155,6 +155,9 @@
       (net 1 GND))
   )
 
+  (gr_text Auto-TOS3R (at 150 117) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_line (start 204.25 80.25) (end 204.25 118.75) (layer Edge.Cuts) (width 0.05) (tstamp 5F025073))
   (dimension 22.25 (width 0.15) (layer Dwgs.User)
     (gr_text "22.250 mm" (at 241.8 110.625 90) (layer Dwgs.User)
@@ -564,7 +567,7 @@
   (via (at 150 89.5) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5F024FEF))
   (via (at 155 89.5) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5F024FF5))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5F01EC2C) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5F024076) (hatch edge 0.508)
     (connect_pads yes (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -613,7 +616,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5F01EC2B) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5F024073) (hatch edge 0.508)
     (connect_pads yes (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
